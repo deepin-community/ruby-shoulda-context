@@ -1,0 +1,90 @@
+ruby-shoulda-context (2.0.0-2) unstable; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Update team name
+  * Add .gitattributes to keep unwanted files out of the source package
+
+  [ Pirate Praveen ]
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 04 Sep 2020 14:38:42 +0530
+
+ruby-shoulda-context (2.0.0-1) experimental; urgency=medium
+
+  [ Cédric Boutillier ]
+  * Bump debhelper compatibility level to 9
+  * Remove version in the gem2deb build-dependency
+  * Use https:// in Vcs-* fields
+  * Bump Standards-Version to 3.9.7 (no changes needed)
+  * Run wrap-and-sort on packaging files
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * debian/control: Remove empty control field Uploaders.
+  * Use secure URI in debian/watch.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.5.0 (no changes needed)
+  * Add myself to uploaders
+  * New upstream version 2.0.0
+  * Drop patches no longer required
+  * Remove git usage in gemspec file
+  * Remove usage of appraisal in tests
+  * Add ruby-pry-byebug as build dependency
+  * Remove usage of warnings_logger library
+  * Disable tests that require snowglobe (not packaged)
+  * Fix copyright file syntax
+  * Add Breaks: ruby-shoulda (<< 4.0~)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 22 Aug 2020 20:16:05 +0530
+
+ruby-shoulda-context (1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Praveen Arimbrathodiyil ]
+  * remove libshoulda* in Conflicts
+
+  [ Christian Hofstaedtler ]
+  * Fix typo in package description.
+    Thanks to Pascal De Vuyst (Closes: #739217)
+
+  [ Cédric Boutillier ]
+  * Imported Upstream version 1.2.0
+  * require 'mocha/setup' to correctly initialize mocha (Closes: #743071)
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+  * tests:
+    - simplify Rake task to run tests;
+    - deactivate check for BUNDLE_GEMFILE in tests
+    - deactivate test_framework_detection_test.rb
+    - do not ignore test results anymore
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 01 Apr 2014 21:49:34 +0200
+
+ruby-shoulda-context (1.1.2-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+  * Bump standards version to 3.9.4.
+  * Add build dep on ruby-test-unit.
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Wed, 22 May 2013 20:57:16 +0530
+
+ruby-shoulda-context (1.0.0~beta1-1) unstable; urgency=low
+
+  * Initial release (Closes: #626017).
+
+ -- Antonio Terceiro <terceiro@softwarelivre.org>  Sat, 04 Jun 2011 23:13:21 -0700

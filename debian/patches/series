@@ -1,0 +1,4 @@
+remove-git-in-gemspec.patch
+remove-appraisal.patch
+remove-warnings-logger.patch
+remove-snowglobe.patch

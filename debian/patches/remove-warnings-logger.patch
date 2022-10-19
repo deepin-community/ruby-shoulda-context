@@ -1,0 +1,22 @@
+This library is not packaged
+
+--- a/test/test_helper.rb
++++ b/test/test_helper.rb
+@@ -1,5 +1,4 @@
+ require "pry-byebug"
+-require "warnings_logger"
+ 
+ TEST_FRAMEWORK = ENV.fetch("TEST_FRAMEWORK", "minitest")
+ 
+@@ -25,11 +24,6 @@
+     Minitest::Assertion
+   end
+ 
+-WarningsLogger::Spy.call(
+-  project_name: "shoulda-context",
+-  project_directory: Pathname.new("../..").expand_path(__FILE__)
+-)
+-
+ require_relative "support/rails_application_with_shoulda_context"
+ 
+ require_relative "../lib/shoulda/context"

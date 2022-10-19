@@ -1,0 +1,13 @@
+This test require snowglobe, which is not packaged
+
+--- a/test/test_helper.rb
++++ b/test/test_helper.rb
+@@ -24,8 +24,6 @@
+     Minitest::Assertion
+   end
+ 
+-require_relative "support/rails_application_with_shoulda_context"
+-
+ require_relative "../lib/shoulda/context"
+ 
+ Shoulda.autoload_macros(

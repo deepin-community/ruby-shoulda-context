@@ -1,0 +1,15 @@
+We don't use appraisal in debian, we run tests with versions available in the
+archive.
+
+--- a/test/test_helper.rb
++++ b/test/test_helper.rb
+@@ -1,9 +1,3 @@
+-require_relative "support/current_bundle"
+-
+-Tests::CurrentBundle.instance.assert_appraisal!
+-
+-#---
+-
+ require "pry-byebug"
+ require "warnings_logger"
+ 

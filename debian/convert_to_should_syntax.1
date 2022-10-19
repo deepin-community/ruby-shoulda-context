@@ -1,0 +1,37 @@
+.TH convert_to_shoulda_syntax "1" "September 2008" "convert_to_shoulda_syntax" ""
+.SH NAME
+convert_to_shoulda_syntax - converts a regular Test::Unit Ruby source file into
+one that uses shoulda syntax.
+.SH SYNOPSIS
+.B convert_to_shoulda_syntax
+\fInormal_test_file.rb\fR
+.SH DESCRIPTION
+converts a unit test file using regular Test::Unit syntax to one using the
+nicer shoulda syntax, i.e. it will convert an existing test file with names like
+.IP
+def test_should_do_stuff
+.IP
+\&...
+.IP
+end
+.PP
+to one using the new syntax:
+.IP
+should "be super cool" do
+.IP
+\&...
+.IP
+end
+.PP
+A copy of the old file will be left under /tmp/ in case this script just
+seriously screws up.
+.PP
+.SH "SEE ALSO"
+.PP
+/usr/share/doc/libshoulda-ruby/ as installed by the libshoulda-ruby package for
+documentation of should itself.
+.SH "ABOUT"
+This manual page was written by Antonio Terceiro <terceiro@softwarelivre.org>
+for the Debian GNU/Linux system, but may be used by others. It was based on
+convert_to_shoulda_syntax's help output, i.e., when called without proper
+arguments, and with the help of help2man.

@@ -1,0 +1,31 @@
+Source: ruby-shoulda-context
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               rake,
+               ruby-mocha (>= 0.13~),
+               ruby-test-unit,
+               ruby-pry-byebug
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-shoulda-context.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-shoulda-context
+Homepage: https://github.com/thoughtbot/shoulda-context
+XS-Ruby-Versions: all
+
+Package: ruby-shoulda-context
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: ruby-shoulda (<< 4.0~)
+Description: context framework for Test::Unit
+ Shoulda’s contexts make it easy to write understandable and maintainable
+ tests for Test::Unit. It’s fully compatible with your existing tests in
+ Test::Unit, and requires no retooling to use.
+ .
+ This package provides shoulda-context, a context framework for Test::Unit that
+ was extracted from (and is used by) shoulda.
